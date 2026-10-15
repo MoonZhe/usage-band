@@ -1,13 +1,19 @@
 # usage-band
 
-A Claude Code mod that shows a usage band above the prompt:
+A Claude Code mod that shows a usage band above the prompt.
 
-- **5-hour and 7-day limits**: percent used and time until reset
-- **Tokens**: input and output for the session, subagents included
-- **Context window**: how full it is
-- **Session cost**: at API list price (not what a subscription bills)
+![usage-band preview](docs/preview.svg)
 
-Works in the terminal and in the Claude desktop app's Code tab.
+*Rendered from the mod's own drawing code with sample numbers. It follows your light or dark theme.*
+
+From left to right:
+
+- **5h / 7d**: percent of your 5-hour and 7-day limits used, and time until each resets. The bar turns yellow then red as it fills; the tick marks how far through the window you are, so a bar ahead of its tick means you're burning faster than the window allows.
+- **↑ / ↓**: input and output tokens for the session, subagents included
+- **Context**: tokens in the context window, out of its size
+- **$**: session cost at API list price (not what a subscription bills)
+
+Hover a pill in the desktop app for details. In the terminal the band is drawn as colored text instead of pills. `/usage-band hide` and `/usage-band show` toggle it; `/usage-band` alone prints the readings.
 
 ## Install
 
