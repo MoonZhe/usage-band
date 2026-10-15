@@ -1,0 +1,13 @@
+{
+  "name": "usage-band",
+  "owner": { "name": "MoonZhe" },
+  "description": "Usage band mod for Claude Code",
+  "plugins": [
+    {
+      "name": "usage-band",
+      "source": "./plugins/usage-band",
+      "description": "Usage band above the prompt: 5h/7d limits, token totals and session cost",
+      "version": "0.2.3"
+    }
+  ]
+}

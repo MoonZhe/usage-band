@@ -1,0 +1,7 @@
+{
+  "name": "usage-band",
+  "version": "0.2.3",
+  "author": { "name": "Moon" },
+  "description": "Usage band above the prompt: 5h/7d limits, token totals and session cost",
+  "types": "./types/index.d.ts"
+}
